@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='passport.jpg') }}" alt="vandana" class="profile-img"><h1>Vandana Kumari</h1>
+        <p>Junior Data Analyst | Python Developer </p>
+    </header>
+    <section>
+        <h2>About</h2>
+        <li><a href="https://github.com/vandana-kumari" target="_blank">Github </a></li>
+        <li><a href="https://www.linkedin.com/in/vandana-kumari-214a40274" target="_blank">Linkedin </a></li>
+        <p>
+            Passionate data analyst with experience in Python(pandas , numpy, seaborn , matplotlib), SQL,Ms Excel . 
+            Building tools and solutions to solve real-world problems.
+        </p>
+        <ul>
+            <li>Python · SQL · Flask · MySQL</li>
+            <li>Data Analysis · Data Visualization</li>
+            <li>Web scraping · Automation</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li>Build portfolio website using Flask</li>
+            <li>Sports Tournament Tracker (MySQL Backend)</li>
+            <li>Python CLI To-do List App with Persistent Storage</li>
+            <li>Web Scraper for E-commerce Price Comparison</li>
+            <li>Build a REST API with Flask 1.Use Flask to create endpoints 2.Store users in a dictionary or in-memory list</li>
+            <li>Data Analysis on CSV Files</li>
+            <li>Real-Estate-Price-Prediction</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Contact</h2>
+
+        <form action="/contact" method="POST">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            <label>Message:</label>
+            <textarea name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
